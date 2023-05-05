@@ -50,3 +50,18 @@ export default function Choix() {
     </div>
   );
 }
+
+async function getLocalAPIInfo(apiURL) {
+  try {
+    const response = await fetch(apiURL);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+const apiURL = 'http://localhost:8000/jeux';
+getLocalAPIInfo(apiURL)
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
