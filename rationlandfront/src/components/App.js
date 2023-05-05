@@ -6,6 +6,8 @@ import {
 import Choix from './Choix';
 import NavbarHome from './NavbarHome';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
+import TestRand from './TestRand';
 
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
     <NavbarHome/>
     <Routes>
       <Route path="/" element={<Choix />}/>
-      <Route path="/" element={<Choix />}/>
+      <Route path="/test" element={<TestRand />}/>
 
     </Routes>
   </div>
