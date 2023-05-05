@@ -14,8 +14,6 @@ function App() {
     <NavbarHome/>
     <Routes>
       <Route path="/" element={<Choix />}/>
-      <Route path="/" element={<Choix />}/>
-
     </Routes>
   </div>
   );
