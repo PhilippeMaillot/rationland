@@ -5,7 +5,7 @@ export default function Choix() {
   const [question, setQuestion] = useState('');
   const [imagePath, setImagePath] = useState('');
   const [images, setImages] = useState([]);
-  const [basePath, setBasePath] = useState('img/'); // ajout de l'état basePath
+  const [basePath, setBasePath] = useState('img/');
 
   useEffect(() => {
     async function fetchImages() {
@@ -14,13 +14,13 @@ export default function Choix() {
       const imagesWithFullPath = data.map(image => {
         return {
           ...image,
-          path: basePath + image.imageUrl.split('/').pop() // construction du chemin complet
+          path: basePath + image.imageUrl.split('/').pop()
         };
       });
       setImages(imagesWithFullPath);
     }
     fetchImages();
-  }, [basePath]); // écoute de l'état basePath
+  }, [basePath]);
 
   const handleNewQuestion = () => {
     const randomImageIndex = Math.floor(Math.random() * images.length);
@@ -40,7 +40,7 @@ export default function Choix() {
   return (
     <div>
       <h1>{question}</h1>
-      {imagePath && <img src={imagePath} alt="Image de blind test" />} {/* utilisation de imagePath */}
+      {imagePath && <img src={require("../" + imagePath)} alt="Image de blind test" />} {/* Utilisation de require pour charger l'image */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="reponse">Réponse :</label>
         <input type="text" id="reponse" name="reponse" />
@@ -50,18 +50,3 @@ export default function Choix() {
     </div>
   );
 }
-
-async function getLocalAPIInfo(apiURL) {
-  try {
-    const response = await fetch(apiURL);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-  }
-}
-
-const apiURL = 'http://localhost:8000/jeux';
-getLocalAPIInfo(apiURL)
-  .then(data => console.log(data))
-  .catch(error => console.error(error));
