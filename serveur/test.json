@@ -68,5 +68,35 @@
     "id": 14,
     "name": "Zelda",
     "imageUrl": "zelda.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Honkai impact",
+    "imageUrl": "hi.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Honkai star rail",
+    "imageUrl": "hsr.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Borderlands 1",
+    "imageUrl": "b1.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Borderlands 2",
+    "imageUrl": "b2.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Borderlands 3",
+    "imageUrl": "b3.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Tiny tina wonderlands",
+    "imageUrl": "ttw.jpg"
   }
 ]
