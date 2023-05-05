@@ -14,8 +14,8 @@
 }
 , {
     "id" : 4,
-    "name": "destiny 2",
-    "imageUrl": "destiny_2.jpg"
+    "name": "genshin impact",
+    "imageUrl": "Genshin.jpg"
 }
 , {
     "id" : 5,
@@ -24,7 +24,7 @@
 }
 , {
     "id" : 6,
-    "name": "Monster hunter wolrd",
+    "name": "Monster hunter world",
     "imageUrl": "MHW.jpg"
 }, {
     "id" : 7,
