@@ -1,66 +1,72 @@
-[{
-    "id" : 1,
+[
+  {
+    "id": 1,
     "name": "apex legend",
     "imageUrl": "apex_legend.jpg"
-}, {
-    "id" : 2,
+  },
+  {
+    "id": 2,
     "name": "brawl stars",
     "imageUrl": "brawl-stars.jpg"
-}
-, {
-    "id" : 3,
+  },
+  {
+    "id": 3,
     "name": "cyberpunk 2077",
     "imageUrl": "cyberpunk_2077.jpg"
-}
-, {
-    "id" : 4,
+  },
+  {
+    "id": 4,
     "name": "destiny 2",
     "imageUrl": "destiny_2.jpg"
-}
-, {
-    "id" : 5,
+  },
+  {
+    "id": 5,
     "name": "destiny 2",
     "imageUrl": "destiny_2.jpg"
-}
-, {
-    "id" : 6,
+  },
+  {
+    "id": 6,
     "name": "Monster hunter wolrd",
     "imageUrl": "MHW.jpg"
-}, {
-    "id" : 7,
+  },
+  {
+    "id": 7,
     "name": "Nier",
     "imageUrl": "Nier.jpg"
-}, {
-    "id" : 8,
+  },
+  {
+    "id": 8,
     "name": "satisfactory",
     "imageUrl": "satisfactory.jpg"
-}, {
-    "id" : 9,
+  },
+  {
+    "id": 9,
     "name": "splatoon 3",
     "imageUrl": "splatoon_3.jpg"
-}
-, {
-    "id" : 10,
+  },
+  {
+    "id": 10,
     "name": "ARK survival evolved",
     "imageUrl": "ark-survival-evolved.jpg"
-}
-, {
-    "id" : 11,
+  },
+  {
+    "id": 11,
     "name": "mario kart",
     "imageUrl": "mario_kart.jpg"
-}
-, {
-    "id" : 12,
+  },
+  {
+    "id": 12,
     "name": "world of warcraft",
     "imageUrl": "orgrimar.jpg"
-}
-, {
-    "id" : 13,
+  },
+  {
+    "id": 13,
     "name": "star wars battlefront",
     "imageUrl": "stars_wars_battlefront.jpg"
-}
-, {
-    "id" : 14,
+  },
+  {
+    "id": 14,
     "name": "Zelda",
     "imageUrl": "zelda.jpg"
-}]
+  }
+]
