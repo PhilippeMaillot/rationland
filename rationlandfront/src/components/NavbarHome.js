@@ -13,7 +13,7 @@ export default function NavbarHome(){
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <LinkContainer to="/">
-                <Nav.Link>accueil</Nav.Link>
+                <Nav.Link>Accueil</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
