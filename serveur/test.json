@@ -13,19 +13,19 @@
     "id": 3,
     "name": "cyberpunk 2077",
     "imageUrl": "cyberpunk_2077.jpg"
-}
-, {
-    "id" : 4,
+  },
+  {
+    "id": 4,
     "name": "genshin impact",
     "imageUrl": "Genshin.jpg"
-}
-, {
-    "id" : 5,
+  },
+  {
+    "id": 5,
     "name": "destiny 2",
     "imageUrl": "destiny_2.jpg"
-}
-, {
-    "id" : 6,
+  },
+  {
+    "id": 6,
     "name": "Monster hunter world",
     "imageUrl": "MHW.jpg"
   },

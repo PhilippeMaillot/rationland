@@ -55,6 +55,75 @@ app.post('/addJeux', (req,res)=>{
   });
 })
 
+app.put("/modifJeux/:id", (req,res)=>{
+  const gameId = req.params.id;
+  const { name, imageUrl } = req.body;
+
+  fs.readFile('test.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Erreur serveur');
+    }
+
+    const jeux = JSON.parse(data);
+
+    // Recherche du jeu par son ID
+    const jeu = jeux.find((j) => j.id === parseInt(gameId));
+
+    if (!jeu) {
+      return res.status(404).send('Jeu non trouvé');
+    }
+
+    // Mise à jour des propriétés du jeu
+    jeu.name = name;
+    jeu.imageUrl = imageUrl;
+
+    const json = JSON.stringify(jeux, null, 2);
+
+    fs.writeFile('test.json', json, (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send('Erreur serveur');
+      }
+
+      res.send('Jeu modifié avec succès');
+    });
+  });
+})
+
+app.delete('/delJeux/:id', (req, res) => {
+  const gameId = req.params.id;
+
+  fs.readFile('test.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send('Erreur serveur');
+    }
+
+    let jeux = JSON.parse(data);
+
+    // Recherche du jeu par son ID
+    const jeuIndex = jeux.findIndex((j) => j.id === parseInt(gameId));
+
+    if (jeuIndex === -1) {
+      return res.status(404).send('Jeu non trouvé');
+    }
+
+    // Suppression du jeu du tableau
+    jeux.splice(jeuIndex, 1);
+
+    const json = JSON.stringify(jeux, null, 2);
+
+    fs.writeFile('test.json', json, (err) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send('Erreur serveur');
+      }
+
+      res.send('Jeu supprimé avec succès');
+    });
+  });
+});
 app.listen(8000, () => {
   console.log('Server started on port 8000');
 });
